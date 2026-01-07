@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Capsula Pro Saúde - Suplementos 100% naturais para sua saúde e bem-estar. Confira nosso catálogo de produtos premium.">
+<meta name="keywords" content="suplementos, saúde, natural, bem-estar, emagrecimento, vitaminas">
+<meta property="og:title" content="CAPSULA PRO SAÚDE - Suplementos Premium">
+<meta property="og:description" content="Suplementos 100% naturais para sua saúde e bem-estar.">
+<meta property="og:image" content="img/logo.jpeg">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/logo.jpeg" type="image/jpeg">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; img-src 'self' data: https://ev.braip.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self';">
+<script src="js/security.js"></script>
+<title>CAPSULA PRO  SAÚDE - Suplementos Premium</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="container">
+        <span><i class="fas fa-truck"></i> Frete Grátis acima de R$100</span>
+        <span><i class="fas fa-tag"></i> Até 10% OFF em produtos selecionados</span>
+        <span><i class="fas fa-check-circle"></i> Satisfação Garantida</span>
+    </div>
+</div>
+
+<header>
+    <div class="container header-content">
+        <div class="logo">
+            <h1>CAPSULA PRO SAÚDE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Catálogo</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="header-search">
+            <input id="campoBuscaHeader" type="search" placeholder="Buscar produtos..." aria-label="Buscar produtos" />
+        </div>
+    </div>
+</header>
+
+<section class="banner-suplementos">
+    <div class="conteudo-texto container">
+      <h3>CAPSULA PRO SAÚDE <span class="seta">▼</span></h3> 
+      <h1>SUPLEMENTOS</h1>
+      <h2>Cápsulas Premium para sua Saúde</h2>
+      <p>Produtos 100% naturais selecionados para sua energia e bem-estar</p>
+      <a href="#produtos" class="btn-ver-produtos">Ver Catálogo</a>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="value">+50k</div>
+          <div class="label">Clientes satisfeitos</div>
+        </div>
+        <div class="stat">
+          <div class="value">100%</div>
+          <div class="label">Fórmulas naturais</div>
+        </div>
+        <div class="stat">
+          <div class="value">4,8★</div>
+          <div class="label">Avaliação média</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="galeria-imagens">
+      <div class="card-imagem">
+        <img loading="lazy" decoding="async" src="img/products/slimgota.jpg" alt="Suplemento Gotas"> 
+      </div>
+      <div class="card-imagem">
+        <img loading="lazy" decoding="async" src="images/products/lift-detox.jpeg" alt="Lift Detox">
+      </div>
+      <div class="card-imagem">
+        <img loading="lazy" decoding="async" src="images/products/vita.jpg" alt="Outro Suplemento">
+      </div>
+    </div>
+</section>
+<section id="produtos" class="products-section">
+<div class="container">
+<h2 class="section-title">Nossos Produtos</h2>
+<p class="section-desc">Selecionamos suplementos 100% naturais com fórmulas avançadas para apoiar sua saúde, energia e bem-estar no dia a dia. Navegue pelo catálogo e encontre produtos pensados para pele, emagrecimento, dores, performance e cuidados capilares — todos com qualidade e foco em resultados reais.</p>
+<div class="filters" aria-label="Filtrar por categoria">
+  <button class="btn-filter active" data-cat="todos"><i class="fas fa-list"></i> Todos</button>
+  <button class="btn-filter" data-cat="pele"><i class="fas fa-leaf"></i> Pele</button>
+  <button class="btn-filter" data-cat="emagrecimento"><i class="fas fa-fire"></i> Emagrecimento</button>
+  <button class="btn-filter" data-cat="dores"><i class="fas fa-bone"></i> Dores</button>
+  <button class="btn-filter" data-cat="sexual"><i class="fas fa-heart"></i> Sexual</button>
+  <button class="btn-filter" data-cat="calvície"><i class="fas fa-user"></i> Calvície</button>
+</div>
+
+<section id="adminBanners" class="admin-panel" hidden>
+  <h2>Gerenciar Banners de Produtos</h2>
+  <div class="admin-grid">
+    <div>
+      <div class="admin-field">
+        <label for="adminProduto">Produto</label>
+        <select id="adminProduto"></select>
+      </div>
+      <div class="admin-field">
+        <label for="adminAlt">Texto alternativo (acessibilidade)</label>
+        <input id="adminAlt" type="text" placeholder="Ex.: Banner do Revera Caps">
+      </div>
+      <div class="admin-field">
+        <label for="adminArquivo">Banner (JPG/PNG, máx. 2MB)</label>
+        <input id="adminArquivo" type="file" accept=".jpg,.jpeg,.png,image/jpeg,image/png">
+        <span class="admin-hint">Formatos aceitos: JPG/PNG. Tamanho máximo: 2MB.</span>
+      </div>
+      <div class="admin-actions">
+        <button id="adminPreview" class="btn-details">Pré-visualizar</button>
+        <button id="adminSalvar" class="btn-buy">Salvar banner</button>
+        <button id="adminTestes" class="btn-details">Executar testes</button>
+      </div>
+    </div>
+    <div class="admin-preview">
+      <img id="adminPreviewImg" alt="" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="product-grid">
+
+<script>
+const linkCompra = "https://ev.braip.com/ref?pl=plar2mlg&ck=chekdqlp&af=afi4vx52n9";
+</script>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/revera-caps.jpg" alt="Revera Caps">
+    <h3>Revera Caps</h3>
+    <div class="category-label">[CATEGORIA] PELE</div>
+    <div class="actions">
+        <a href="produto1.html?produto=revera-caps" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=plar2mlg&ck=chekdqlp&af=afi4vx52n9" target="_blank" class="btn-buy">
+            Comprar <i class="fas fa-shopping-cart"></i>
+        </a>
+    </div>
+</div>
+
+<div class="product-card">
+  <img src="images/products/vigor-black.jpg" alt="Vigor Max">
+    <h3>Vigor Max</h3>
+    <div class="category-label"><i class="fas fa-heart"></i> [CATEGORIA] SEXUAL</div>
+    <div class="actions">
+        <a href="produto1.html?produto=vigor-max" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=pla419d0&ck=chel09p4&af=afip12vozp" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/visara.jpg" alt="Visara">
+    <h3>Visara</h3>
+    <div class="category-label">[CATEGORIA] PELE</div>
+    <div class="actions">
+        <a href="produto1.html?produto=visara" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=plaozodx&ck=che06epn&af=afi28zxvjg" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/regenere-drop.jpeg" alt="Regenere Drops">
+    <h3>Regenere Drops</h3>
+    <div class="category-label">[CATEGORIA] PELE</div>
+    <div class="actions">
+        <a href="produto1.html?produto=regenere-drops" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=pla4l4dg&ck=che7dowl&af=afi7gpyjqq9" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/lift-detox.jpeg" alt="Lift Detox Black">
+    <h3>Lift Detox Black</h3>
+    <div class="category-label category-sm">[CATEGORIA] EMAGRECIMENTO</div>
+    <div class="actions">
+        <a href="produto1.html?produto=lift-detox" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=plag8o2v&ck=chew8wl8&af=afijpjq6zn" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/diurie.jpg" alt="Diurie Fit Black">
+    <h3>Diurie Fit Black </h3>
+    <div class="category-label category-sm">[CATEGORIA] EMAGRECIMENTO</div>
+    <div class="actions">
+        <a href="produto1.html?produto=diurie-fit" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=plam0ezy&ck=cherxmpv&af=afivp9gvy1" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/nutral.jpg" alt="Clareador Natural Fit">
+    <h3>Clareador Natural Fit</h3>
+    <div class="category-label">[CATEGORIA] PELE</div>
+    <div class="actions">
+        <a href="produto1.html?produto=clareador-natural-fit" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=plavx0rn&ck=chen8edo&af=afie07gx1y" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/harmony-hair.jpg" alt="Harmony Hair">
+    <h3>Harmony Hair</h3>
+   <div class="category-label">[CATEGORIA] CALVÍCIE</div>
+    <div class="actions">
+        <a href="produto1.html?produto=harmony-hair" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=pla52jnz&ck=che2z0mp&af=afidnmjn30" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/colageno.jpg" alt="Colágeno Tipo II Pro">
+    <h3>Colágeno Tipo II Pro</h3>
+    <div class="category-label">[CATEGORIA] DORES</div>
+    <div class="actions">
+        <a href="produto1.html?produto=colageno-tipo-ii" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=plaxpreq&ck=chevljvg&af=afiqejpeq5" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/durasil.jpg" alt="Durasil">
+    <h3>Durasil</h3>
+    <div class="category-label">[CATEGORIA] SEXUAL</div>
+    <div class="actions">
+        <a href="produto1.html?produto=durasil" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=plan88wq&ck=chep9z5z&af=afime88z8v" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/prosterite.jpg" alt="Prosterite">
+    <h3>Prosterite</h3>
+    <div class="category-label">[CATEGORIA] SEXUAL</div>
+    <div class="actions">
+        <a href="produto1.html?produto=prosterite" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=plal60ly&ck=chepvqxz&af=afiyd9vjd2" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/erectus-plus.jpg" alt="Erectus Plus">
+    <h3>Erectus Plus</h3>
+    <div class="category-label">[CATEGORIA] SEXUAL</div>
+    <div class="actions">
+        <a href="produto1.html?produto=erectus-plus" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=pla48l1v&ck=chedd8lj&af=afig5z0o04" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/vita.jpg" alt="Ora Pro Nobis">
+    <h3>Ora Pro Nobis</h3>
+    <div class="category-label">[CATEGORIA] DORES</div>
+    <div class="actions">
+        <a href="produto1.html?produto=ora-pro-nobis" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=plako20z&ck=cheq76nd&af=afi9elz1yj" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/folixil.jpg" alt="Folixil">
+    <h3>Folixil</h3>
+    <div class="category-label">[CATEGORIA] CALVÍCIE</div>
+    <div class="actions">
+        <a href="produto1.html?produto=folixil" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=pla2gyj0&ck=cheqpk6e&af=afi6582jdg" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/rosa.jpg" alt="Rosa Amazonica">
+    <h3>Rosa Amazonica</h3>
+    <div class="category-label">[CATEGORIA] PELE</div>
+    <div class="actions">
+        <a href="produto1.html?produto=rosa-amazonica" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=plar2mlg&ck=chekdqlp&af=afi4vx52n9" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/fire.jpg" alt="Fire Max">
+    <h3>Fire Max</h3>
+    <div class="category-label">[CATEGORIA] SEXUAL</div>
+    <div class="actions">
+        <a href="produto1.html?produto=fire-max" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=playxzpe&ck=che5v17v&af=afi8j7xynx" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/curcu.jpg" alt="Curcublack">
+    <h3>Curcublack</h3>
+    <div class="category-label">[CATEGORIA] DORES</div>
+    <div class="actions">
+        <a href="produto1.html?produto=curcublack" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=pla2lm8n&ck=che4elkg&af=afig5p6j81" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/slimgota.jpg" alt="Slim Gota Black">
+    <h3>Slim Gota Black</h3>
+    <div class="category-label">[CATEGORIA] EMAGRECIMENTO</div>
+    <div class="actions">
+        <a href="produto1.html?produto=slim-gota-black" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=pla4xonp&ck=cheqpn4d&af=afixj176zd" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/pura.jpeg" alt="Purah">
+    <h3>Purah</h3>
+    <div class="category-label">[CATEGORIA] PELE</div>
+    <div class="actions">
+        <a href="produto1.html?produto=purah" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=pla812y1&ck=cherw7ox&af=afi9exl5g3" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/fire-max-feminino.jpg" alt="Fire Max Feminine">
+    <h3>Fire Max Feminine</h3>
+    <div class="category-label">[CATEGORIA] SEXUAL</div>
+    <div class="actions">
+        <a href="produto1.html?produto=fire-max-feminine" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=plar2mlg&ck=chekdqlp&af=afi4vx52n9" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/hemocura.jpg" alt="Hemocura">
+    <h3>Hemocura</h3>
+    <div class="category-label">[CATEGORIA] DORES</div>
+    <div class="actions">
+        <a href="produto1.html?produto=hemocura" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=playqx1j&ck=chekjn9d&af=afi3v1jnev" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/ozenfit.jpg" alt="OzenFit Caps">
+    <h3>OzenFit Caps</h3>
+    <div class="category-label">[CATEGORIA] EMAGRECIMENTO</div>
+    <div class="actions">
+        <a href="produto1.html?produto=ozenfit-caps" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=pla0wely&ck=cheqx91d&af=afi9e0q4m5" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/libid.jpg" alt="Libid Intense">
+    <h3>Libid Intense</h3>
+    <div class="category-label">[CATEGORIA] SEXUAL</div>
+    <div class="actions">
+        <a href="produto1.html?produto=libid-intense" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=pla8k9no&ck=chep9wvd&af=afineqqxqp" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/biotin-hair.jpg" alt="Biotin Hair">
+    <h3>Biotin Hair</h3>
+    <div class="category-label">[CATEGORIA] PELE</div>
+    <div class="actions">
+        <a href="produto1.html?produto=biotin-hair" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=pla1pzzn&ck=chenrgge&af=afijpnmm3n" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+ <div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/fignar.jpg" alt="Fignar Gotas">
+    <h3>Fignar Gotas</h3>
+    <div class="category-label">[CATEGORIA] DORES</div>
+    <div class="actions">
+        <a href="produto1.html?produto=fignar-gotas" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=plao8gv2&ck=che1xop0&af=afi07gxg74" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+ <div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/retinol.jpg" alt="Retinol 8 em 1 ">
+    <h3>Retinol 8 em 1 </h3>
+    <div class="category-label">[CATEGORIA] PELE</div>
+    <div class="actions">
+        <a href="produto1.html?produto=retinol-8-em-1" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=plalx69o&ck=chel0mv4&af=afi6582j53" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+
+ </div>
+ <div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/nervocure.jpg" alt="Nervocure">
+    <h3>Nervocure</h3>
+    <div class="category-label">[CATEGORIA] DORES</div>
+    <div class="actions">
+        <a href="produto1.html?produto=nervocure" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=plaeqlxd&ck=chejz5zz&af=afio82m94g" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+
+    </div>
+ <div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/block-fat.jpg" alt="Block Fat">
+    <h3>Block Fat</h3>
+    <div class="category-label">[CATEGORIA] EMAGRECIMENTO</div>
+    <div class="actions">
+        <a href="produto1.html?produto=block-fat" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=plaowr88&ck=che7dwnq&af=afiydmjo0n" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+
+      </div>
+ <div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/hemo-gotas.jpg" alt="Hemo Gotas">
+    <h3>Hemo Gotas</h3>
+    <div class="category-label">[CATEGORIA] DORES</div>
+    <div class="actions">
+        <a href="produto1.html?produto=hemo-gotas" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=pla999o6&ck=chejzo87&af=afi11m24e4" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+
+      </div>
+ <div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/queda.jpg" alt="100 Queda">
+    <h3>100 Queda</h3>
+    <div class="category-label">[CATEGORIA] CALVÍCIE</div>
+    <div class="actions">
+        <a href="produto1.html?produto=100-queda" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=plazzpeo&ck=chepz1lz&af=afi28omeev" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+
+    </div>
+ <div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/clareador-de-manchas.jpg" alt="clareador de manchas">
+    <h3>Clareador De Manchas</h3>
+    <div class="category-label">[CATEGORIA] PELE</div>
+    <div class="actions">
+        <a href="produto1.html?produto=clareador-de-manchas" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=plazdlvl&ck=che9vjep&af=afip1oxm2p" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+
+     </div>
+ <div class="product-card">
+    <img loading="lazy" decoding="async" src="images/products/monjarim.jpeg"  alt="Monjarim">
+    <h3>Monjarim</h3>
+    <div class="category-label">[CATEGORIA] EMAGRECIMENTO</div>
+    <div class="actions">
+        <a href="produto1.html?produto=monjarim" class="btn-details">+ Detalhes</a>
+        <a href="https://ev.braip.com/ref?pl=pla1qrk8&ck=chew4mj1&af=afineq5qo7" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+
+    </div>
+</div>
+
+
+
+<footer id="contato">
+<div class="container footer-content">
+<div class="footer-col">
+    <h3>Capsula Pro Saude</h3>
+    <p>Suplementos premium para sua saúde.</p>
+</div>
+
+<div class="footer-col">
+    <h3>Redes Sociais</h3>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/capsulaprosaude?igsh=MWZkZW9jaWI1aGRxbQ==" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</div>
+
+<div class="footer-col">
+    <h3>Contato</h3>
+    <p><i class="fas fa-envelope"></i> suporte@capsulaprosaude.com</p>
+    <p><i class="fas fa-envelope"></i> </p>
+    <div style="margin-top: 15px; font-size: 0.8em; opacity: 0.8;">
+        <p><i class="fas fa-shield-alt"></i> Site Seguro (HTTPS)</p>
+    </div>
+</div>
+</div>
+
+<div class="copyright">
+<p>&copy; 2026 Capsula Pro Saúde os direitos reservados.</p>
+</div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/main.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

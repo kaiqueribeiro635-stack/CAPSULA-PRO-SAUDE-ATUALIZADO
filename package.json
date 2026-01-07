@@ -1,0 +1,16 @@
+{
+  "name": "capsula-pro-saude",
+  "version": "1.0.0",
+  "description": "Site de suplementos premium",
+  "scripts": {
+    "start": "serve .",
+    "test": "node tests/html.test.js && node tests/produto1.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
