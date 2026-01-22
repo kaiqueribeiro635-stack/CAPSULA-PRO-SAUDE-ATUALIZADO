@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="top">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Capsula Pro Saúde - Suplementos 100% naturais para sua saúde e bem-estar. Confira nosso catálogo de produtos premium.">
+<meta name="keywords" content="suplementos, saúde, natural, bem-estar, emagrecimento, vitaminas">
+<meta property="og:title" content="CAPSULA PRO SAÚDE - Suplementos Premium">
+<meta property="og:description" content="Suplementos 100% naturais para sua saúde e bem-estar.">
+<meta property="og:image" content="img/vita.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/vita.jpg" type="image/jpeg">
+<meta name="theme-color" content="#0c5c3c">
+<link rel="apple-touch-icon" href="img/vita.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap">
+    
+    <title>CAPSULA PRO  SAÚDE - Suplementos Premium</title>
+
+    <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="container">
+        <span><i class="fas fa-truck"></i> Frete Grátis acima de R$100</span>
+        <span><i class="fas fa-tag"></i> Até 10% OFF em produtos selecionados</span>
+        <span><i class="fas fa-check-circle"></i> Satisfação Garantida</span>
+    </div>
+</div>
+
+<header>
+    <div class="container header-content">
+        <div class="logo">
+            <h1>CAPSULA PRO SAÚDE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Catálogo</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="header-search">
+            <div class="search-wrapper">
+                <input id="campoBuscaHeader" type="search" placeholder="Buscar produtos..." aria-label="Buscar produtos" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="searchSuggestions" />
+                <button type="button" class="search-icon-btn" aria-label="Pesquisar">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div id="searchSuggestions" class="search-suggestions" role="listbox" hidden></div>
+                <div id="searchLoading" class="search-loading" role="status" aria-live="polite" hidden>
+                    <i class="fas fa-spinner fa-spin"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+<section class="banner-suplementos">
+    <div class="conteudo-texto container">
+      <h3>CAPSULA PRO SAÚDE <span class="seta">▼</span></h3> 
+      <h1>SUPLEMENTOS</h1>
+      <h2>Cápsulas Premium para sua Saúde</h2>
+      <p>Produtos 100% naturais selecionados para sua energia e bem-estar</p>
+      <a href="#produtos" class="btn-ver-produtos">Ver Catálogo</a>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="value">+50k</div>
+          <div class="label">Clientes satisfeitos</div>
+        </div>
+        <div class="stat">
+          <div class="value">100%</div>
+          <div class="label">Fórmulas naturais</div>
+        </div>
+        <div class="stat">
+          <div class="value">4,8★</div>
+          <div class="label">Avaliação média</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="galeria-imagens">
+      <div class="card-imagem">
+        <img loading="lazy" decoding="async" src="img/vita.jpg" alt="Suplemento Gotas"> 
+      </div>
+      <div class="card-imagem">
+        <img loading="lazy" decoding="async" src="img/lift-detox.jpeg" alt="Lift Detox">
+      </div>
+      <div class="card-imagem">
+        <img loading="lazy" decoding="async" src="img/libid.jpg" alt="Outro Suplemento">
+      </div>
+    </div>
+</section>
+<!-- Seção de detalhes foi transferida para detalhes.html -->
+
+<!-- LANDING PAGE PADRÃO DE VENDAS (LP Conversão) -->
+<section id="lpProductPage" class="lp-hero-product" hidden>
+  <div class="container lp-hero-grid">
+    <div class="lp-hero-text">
+      <span id="lpCategory" class="categoria">Categoria</span>
+      <h1 id="lpTitle">Nome do Produto</h1>
+      <p id="lpBenefitsText">Texto curto com 3–4 linhas destacando os principais benefícios e a dor que o produto resolve.</p>
+      
+      <div class="lp-stock-status"><i class="fas fa-check-circle"></i> Em estoque</div>
+      
+      <div class="lp-price">
+        <span id="lpPriceCurrent" class="lp-price-current">R$ 0,00</span>
+        <span id="lpPriceOriginal" class="lp-price-original">R$ 0,00</span>
+      </div>
+      
+      <div class="lp-kits">
+        <h4>Escolha o melhor kit para você:</h4>
+        <div class="lp-kit-grid" role="radiogroup" aria-label="Seleção de kits">
+          <button id="lpKit1" class="lp-kit-card" role="radio" aria-checked="true" tabindex="0" data-qty="1">
+            <div class="lp-kit-img"><img id="lpKitImg1" alt="" loading="eager" decoding="async"></div>
+            <div class="lp-kit-info">
+              <strong>1 Pote</strong>
+              <span>Suplementar</span>
+            </div>
+          </button>
+          <button id="lpKit3" class="lp-kit-card highlight" role="radio" aria-checked="false" tabindex="0" data-qty="3">
+            <span class="lp-tag">Mais Vendido</span>
+            <div class="lp-kit-img"><img id="lpKitImg3" alt="" loading="eager" decoding="async"></div>
+            <div class="lp-kit-info">
+              <strong>3 Potes</strong>
+              <span>Recomendado</span>
+            </div>
+          </button>
+        </div>
+      </div>
+      
+      <button id="lpBtnBuy" class="btn-buy big">COMPRAR AGORA <i class="fas fa-check-circle"></i></button>
+      
+      <ul class="lp-list" aria-label="Benefícios rápidos">
+        <li><i class="fas fa-leaf"></i> 100% Natural</li>
+        <li><i class="fas fa-shipping-fast"></i> Entrega Rápida</li>
+        <li><i class="fas fa-shield-alt"></i> Compra Segura</li>
+      </ul>
+    </div>
+    
+    <div class="lp-hero-image">
+      <div class="lp-visual-bg" aria-hidden="true"></div>
+      <img id="lpHeroImg" src="" alt="Mockup do produto" loading="eager" decoding="async">
+    </div>
+  </div>
+</section>
+
+<section id="produtos" class="products-section">
+<div class="container">
+<h2 class="section-title">Nossos Produtos</h2>
+<p class="section-desc">Selecionamos suplementos 100% naturais com fórmulas avançadas para apoiar sua saúde, energia e bem-estar no dia a dia. Navegue pelo catálogo e encontre produtos pensados para pele, emagrecimento, dores, performance e cuidados capilares — todos com qualidade e foco em resultados reais.</p>
+<div class="filters" aria-label="Filtrar por categoria">
+  <button class="btn-filter active" data-cat="todos"><i class="fas fa-list"></i> Todos</button>
+  <button class="btn-filter" data-cat="pele"><i class="fas fa-leaf"></i> Pele</button>
+  <button class="btn-filter" data-cat="emagrecimento"><i class="fas fa-fire"></i> Emagrecimento</button>
+  <button class="btn-filter" data-cat="dores"><i class="fas fa-bone"></i> Dores</button>
+  <button class="btn-filter" data-cat="sexual"><i class="fas fa-heart"></i> Sexual</button>
+  <button class="btn-filter" data-cat="calvície"><i class="fas fa-user"></i> Calvície</button>
+</div>
+
+<section id="adminBanners" class="admin-panel" hidden>
+  <h2>Gerenciar Banners de Produtos</h2>
+  <div class="admin-grid">
+    <div>
+      <div class="admin-field">
+        <label for="adminProduto">Produto</label>
+        <select id="adminProduto"></select>
+      </div>
+      <div class="admin-field">
+        <label for="adminAlt">Texto alternativo (acessibilidade)</label>
+        <input id="adminAlt" type="text" placeholder="Ex.: Banner do Revera Caps">
+      </div>
+      <div class="admin-field">
+        <label for="adminArquivo">Banner (JPG/PNG, máx. 2MB)</label>
+        <input id="adminArquivo" type="file" accept=".jpg,.jpeg,.png,image/jpeg,image/png">
+        <span class="admin-hint">Formatos aceitos: JPG/PNG. Tamanho máximo: 2MB.</span>
+      </div>
+      <div class="admin-actions">
+        <button id="adminPreview" class="btn-details">Pré-visualizar</button>
+        <button id="adminSalvar" class="btn-buy">Salvar banner</button>
+        <button id="adminTestes" class="btn-details">Executar testes</button>
+      </div>
+    </div>
+    <div class="admin-preview">
+      <img id="adminPreviewImg" alt="" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="product-grid">
+
+ 
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/revera-caps.jpg" alt="Revera Caps" data-fallback="img/revera-caps.jpg">
+    <h3>Revera Caps</h3>
+    <div class="category-label">CATEGORIA PELE</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Revera Caps', 'img.baner/revera-caps.jpeg', 'Suplemento natural para pele.', 'R$ 97,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=plar2mlg&ck=chekdqlp&af=afi4vx52n9" target="_blank" class="btn-buy">
+            Comprar <i class="fas fa-shopping-cart"></i>
+        </a>
+    </div>
+</div>
+
+<div class="product-card">
+  <img loading="lazy" decoding="async" src="img/vigor-black.jpg" alt="Vigor Black">
+    <h3>Vigor Black</h3>
+    <div class="category-label"><i class="fas fa-heart"></i> CATEGORIA SEXUAL</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Vigor Black', 'img.baner/vigor-black.jpeg', 'Energia e disposição.', 'R$ 127,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=pla419d0&ck=chel09p4&af=afip12vozp" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/visara.jpg" alt="Visara">
+    <h3>Visara</h3>
+    <div class="category-label">CATEGORIA PELE</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Visara', 'img/visara.jpg', 'Cuidado completo para sua pele.', 'R$ 147,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=plaozodx&ck=che06epn&af=afi28zxvjg" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/regenere-drop.jpeg" alt="Regenere Drops">
+    <h3>Regenere Drops</h3>
+    <div class="category-label">CATEGORIA PELE</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Regenere Drops', 'img/vita.jpg', 'Gotas rejuvenescedoras.', 'R$ 197,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=pla4l4dg&ck=che7dowl&af=afi7gpyjqq9" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/lift-detox.jpeg" alt="Lift Detox Black">
+    <h3>Lift Detox Black</h3>
+    <div class="category-label category-sm">CATEGORIA EMAGRECIMENTO</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Lift Detox Black', 'img/lift-detox.jpeg', 'Detox poderoso para emagrecimento.', 'R$ 97,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=plag8o2v&ck=chew8wl8&af=afijpjq6zn" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/diurie.jpg" alt="Diurie Fit Black">
+    <h3>Diurie Fit Black</h3>
+    <div class="category-label category-sm">CATEGORIA EMAGRECIMENTO</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Diurie Fit Black', 'img/vita.jpg', 'Auxilia na redução de medidas.', 'R$ 117,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=plam0ezy&ck=cherxmpv&af=afivp9gvy1" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/nutral.jpg" alt="Clareador Natural Fit">
+    <h3>Clareador Natural Fit</h3>
+    <div class="category-label">CATEGORIA PELE</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Clareador Natural Fit', 'img/vita.jpg', 'Pele mais clara e uniforme.', 'R$ 137,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=plavx0rn&ck=chen8edo&af=afie07gx1y" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/harmony-hair.jpg" alt="Harmony Hair">
+    <h3>Harmony Hair</h3>
+    <div class="category-label">CATEGORIA CALVÍCIE</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Harmony Hair', 'img/vita.jpg', 'Fortalecimento capilar.', 'R$ 157,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=pla52jnz&ck=che2z0mp&af=afidnmjn30" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/colageno.jpg" alt="Colágeno Tipo II Pro">
+    <h3>Colágeno Tipo II Pro</h3>
+    <div class="category-label">CATEGORIA DORES</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Colágeno Tipo II Pro', 'img/vita.jpg', 'Saúde para suas articulações.', 'R$ 127,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=plaxpreq&ck=chevljvg&af=afiqejpeq5" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/durasil.jpg" alt="Durasil">
+    <h3>Durasil</h3>
+    <div class="category-label">CATEGORIA SEXUAL</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Durasil', 'img/vita.jpg', 'Mais vigor e energia.', 'R$ 147,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=plan88wq&ck=chep9z5z&af=afime88z8v" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/erectus-plus.jpg" alt="Erectus Plus">
+    <h3>Erectus Plus</h3>
+    <div class="category-label">CATEGORIA SEXUAL</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Erectus Plus', 'img/vita.jpg', 'Potência máxima.', 'R$ 167,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=pla48l1v&ck=chedd8lj&af=afig5z0o04" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/vita.jpg" alt="Ora Pro Nobis">
+    <h3>Ora Pro Nobis</h3>
+    <div class="category-label">CATEGORIA DORES</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Ora Pro Nobis', 'img/vita.jpg', 'Suplemento rico em proteínas.', 'R$ 87,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=plako20z&ck=cheq76nd&af=afi9elz1yj" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/folixil.jpg" alt="Folixil">
+    <h3>Folixil</h3>
+    <div class="category-label">CATEGORIA CALVÍCIE</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Folixil', 'img/folixil.jpg', 'Combate a queda de cabelo.', 'R$ 137,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=pla2gyj0&ck=cheqpk6e&af=afi6582jdg" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/rosa.jpg" alt="Rosa Amazonica">
+    <h3>Rosa Amazonica</h3>
+    <div class="category-label">CATEGORIA PELE</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Rosa Amazonica', 'img/vita.jpg', 'Hidratação profunda.', 'R$ 157,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=plar2mlg&ck=chekdqlp&af=afi4vx52n9" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/fire.jpg" alt="Fire Max">
+    <h3>Fire Max</h3>
+    <div class="category-label">CATEGORIA SEXUAL</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Fire Max', 'img/vita.jpg', 'Energia explosiva.', 'R$ 177,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=playxzpe&ck=che5v17v&af=afi8j7xynx" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/curcu.jpg" alt="Curcublack">
+    <h3>Curcublack</h3>
+    <div class="category-label">CATEGORIA DORES</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Curcublack', 'img/vita.jpg', 'Alívio natural para dores.', 'R$ 187,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=pla2lm8n&ck=che4elkg&af=afig5p6j81" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/slimgota.jpg" alt="Slim Gota Black">
+    <h3>Slim Gota Black</h3>
+    <div class="category-label">CATEGORIA EMAGRECIMENTO</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Slim Gota Black', 'img/vita.jpg', 'Gotas para emagrecimento.', 'R$ 127,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=pla4xonp&ck=cheqpn4d&af=afixj176zd" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/pura.jpeg" alt="Purah">
+    <h3>Purah</h3>
+    <div class="category-label">CATEGORIA PELE</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Purah', 'img/vita.jpg', 'Pureza para sua pele.', 'R$ 147,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=pla812y1&ck=cherw7ox&af=afi9exl5g3" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/fire-max-feminino.jpg" alt="Fire Max Feminine">
+    <h3>Fire Max Feminine</h3>
+    <div class="category-label">CATEGORIA SEXUAL</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Fire Max Feminine', 'img/vita.jpg', 'Especial para mulheres.', 'R$ 167,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=plar2mlg&ck=chekdqlp&af=afi4vx52n9" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/ozenfit.jpg" alt="OzenFit Caps">
+    <h3>OzenFit Caps</h3>
+    <div class="category-label">CATEGORIA EMAGRECIMENTO</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('OzenFit Caps', 'img/vita.jpg', 'Cápsulas fit.', 'R$ 137,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=pla0wely&ck=cheqx91d&af=afi9e0q4m5" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/libid.jpg" alt="Libid Intense">
+    <h3>Libid Intense</h3>
+    <div class="category-label">CATEGORIA SEXUAL</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Libid Intense', 'img/libid.jpg', 'Intensidade máxima.', 'R$ 157,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=pla8k9no&ck=chep9wvd&af=afineqqxqp" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/biotin-hair.jpg" alt="Biotin Hair">
+    <h3>Biotin Hair</h3>
+    <div class="category-label">CATEGORIA PELE</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Biotin Hair', 'img/vita.jpg', 'Biotina para cabelos e unhas.', 'R$ 117,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=pla1pzzn&ck=chenrgge&af=afijpnmm3n" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/fignar.jpg" alt="Fignar Gotas">
+    <h3>Fignar Gotas</h3>
+    <div class="category-label">CATEGORIA DORES</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Fignar Gotas', 'img/vita.jpg', 'Alívio rápido.', 'R$ 127,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=plao8gv2&ck=che1xop0&af=afi07gxg74" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/nervocure.jpg" alt="Nervocure">
+    <h3>Nervocure</h3>
+    <div class="category-label">CATEGORIA DORES</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Nervocure', 'img/vita.jpg', 'Calma e bem-estar.', 'R$ 137,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=plaeqlxd&ck=chejz5zz&af=afio82m94g" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/block-fat.jpg" alt="Block Fat">
+    <h3>Block Fat</h3>
+    <div class="category-label">CATEGORIA EMAGRECIMENTO</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Block Fat', 'img/vita.jpg', 'Bloqueador de gordura.', 'R$ 147,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=plaowr88&ck=che7dwnq&af=afiydmjo0n" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/hemo-gotas.jpg" alt="Hemo Gotas">
+    <h3>Hemo Gotas</h3>
+    <div class="category-label">CATEGORIA DORES</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Hemo Gotas', 'img/vita.jpg', 'Saúde do sangue.', 'R$ 157,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=pla999o6&ck=chejzo87&af=afi11m24e4" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/queda.jpg" alt="100 Queda">
+    <h3>100 Queda</h3>
+    <div class="category-label">CATEGORIA CALVÍCIE</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('100 Queda', 'img/vita.jpg', 'Fim da queda de cabelo.', 'R$ 167,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=plazzpeo&ck=chepz1lz&af=afi28omeev" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/clareador-de-manchas.jpg" alt="Clareador De Manchas">
+    <h3>Clareador De Manchas</h3>
+    <div class="category-label">CATEGORIA PELE</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Clareador De Manchas', 'img/vita.jpg', 'Pele sem manchas.', 'R$ 137,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=plazdlvl&ck=che9vjep&af=afip1oxm2p" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/monjarim.jpeg"  alt="Monjarim">
+    <h3>Monjarim</h3>
+    <div class="category-label">CATEGORIA EMAGRECIMENTO</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Monjarim', 'img/vita.jpg', 'Emagrecimento saudável.', 'R$ 147,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=pla1qrk8&ck=chew4mj1&af=afineq5qo7" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/nervocure-max.jpeg" alt="Nervocure Max">
+    <h3>Nervocure Max</h3>
+    <div class="category-label">CATEGORIA DORES</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Nervocure Max', 'img/vita.jpg', 'Alívio máximo.', 'R$ 157,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=plaxw84g&ck=cherq188&af=afi4v12qv9" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+<div class="product-card">
+    <img loading="lazy" decoding="async" src="img/prosterite.jpg" alt="Prosterite">
+    <h3>Prosterite</h3>
+    <div class="category-label">CATEGORIA SEXUAL</div>
+    <div class="actions">
+        <button onclick="abrirDetalhes('Prosterite', 'img/vita.jpg', 'Saúde masculina.', 'R$ 167,00')" class="btn-details">+ Detalhes</button>
+        <a href="https://ev.braip.com/ref?pl=plal60ly&ck=chepvqxz&af=afiyd9vjd2" target="_blank" class="btn-buy">Comprar <i class="fas fa-shopping-cart"></i></a>
+    </div>
+</div>
+
+</div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo">CAPSULA PRO SAÚDE</div>
+                <p class="brand-desc">Suplementos 100% naturais para sua energia e bem-estar. Qualidade premium garantida.</p>
+                <div class="social-links">
+                    <a href="https://instagram.com/capsulaprosaude" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html#produtos">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nav">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Trocas e Devoluções</a></li>
+                    <li><a href="#">Rastrear Pedido</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Atendimento</h3>
+                <ul class="contact-list">
+                    <li><i class="fas fa-envelope"></i> suporte@capsulaprosaude.com</li>
+                    <li><i class="fas fa-clock"></i> Seg à Sex: 9h às 18h</li>
+                </ul>
+                <div class="payment-methods">
+                    <span>Formas de Pagamento:</span>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fas fa-barcode"></i>
+                        <i class="fas fa-qrcode"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Capsula Pro Saúde. Todos os direitos reservados.</p>
+            <p class="developer-credit"><i class="fas fa-shield-alt"></i> Compra 100% Segura</p>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- MODAL DE DETALHES (Mantido para compatibilidade, mas redirecionando para Virtual Page na prática) -->
+<div id="modalDetalhes" class="modal-overlay" style="display: none;">
+    <!-- Conteúdo do Modal foi substituído pela página virtual completa -->
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <section class="footer-main">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">CAPSULA PRO SAÚDE</div>
+                    <p class="brand-desc">Suplementos 100% naturais para sua energia e bem-estar. Qualidade premium garantida.</p>
+                </div>
+                <nav class="footer-nav" aria-label="Navegação de rodapé">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="#produtos">Catálogo</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-contact">
+                    <h3>Suporte</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> contato@capsulaprosaude.com</li>
+                        <li><i class="fas fa-phone" aria-hidden="true"></i> (11) 99999-9999</li>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> São Paulo - SP</li>
+                    </ul>
+                    <div class="social-links" aria-label="Redes sociais">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="payment-methods">
+                        <span>Formas de pagamento:</span>
+                        <div class="payment-icons"><i class="fab fa-cc-visa" aria-hidden="true"></i><i class="fab fa-cc-mastercard" aria-hidden="true"></i><i class="fab fa-cc-amex" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Capsula Pro Saúde. Todos os direitos reservados.</p>
+            <p class="developer-credit"><i class="fas fa-shield-alt" aria-hidden="true"></i> Compra 100% Segura</p>
+            <button id="backToTop" class="back-to-top" type="button" aria-label="Voltar ao topo">
+                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
